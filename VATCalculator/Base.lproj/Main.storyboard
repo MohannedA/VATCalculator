@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VATCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyq-5y-j4r">
+                                <rect key="frame" x="16" y="319" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jem-iq-aI4"/>
+                                    <constraint firstAttribute="width" constant="343" id="nkz-eA-9NC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAT Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTu-XY-5cH">
+                                <rect key="frame" x="126" y="290" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzt-WX-7M9">
+                                <rect key="frame" x="126" y="357" width="124" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Calculate "/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LEh-Nr-RQs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XTu-XY-5cH" secondAttribute="trailing" constant="127" id="A0R-f6-Jsn"/>
+                            <constraint firstItem="yzt-WX-7M9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="A2S-gE-Oq5"/>
+                            <constraint firstItem="eyq-5y-j4r" firstAttribute="top" secondItem="XTu-XY-5cH" secondAttribute="bottom" constant="8" id="Dmq-og-BCe"/>
+                            <constraint firstItem="XTu-XY-5cH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="270" id="FwL-9L-9s1"/>
+                            <constraint firstItem="yzt-WX-7M9" firstAttribute="top" secondItem="eyq-5y-j4r" secondAttribute="bottom" constant="8" id="MVg-bE-328"/>
+                            <constraint firstItem="XTu-XY-5cH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="Qiu-oo-cTL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yzt-WX-7M9" secondAttribute="trailing" constant="125" id="bBI-Dp-0CC"/>
+                            <constraint firstItem="eyq-5y-j4r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ljT-cX-APp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eyq-5y-j4r" secondAttribute="trailing" constant="16" id="xH7-8U-VJF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="priceTextField" destination="eyq-5y-j4r" id="5FT-sZ-Y8T"/>
+                        <segue destination="55N-eD-F3h" kind="show" identifier="segue" id="maT-Xa-zGp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="HlK-S0-ute">
+            <objects>
+                <viewController id="55N-eD-F3h" customClass="SecondViewController" customModule="VATCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Q1-5K-GMe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAT is 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTi-pv-Aan">
+                                <rect key="frame" x="16" y="310" width="343" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULN-0k-AH2">
+                                <rect key="frame" x="160" y="375" width="54" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="P2Q-iO-XqP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8s6-Tz-510" firstAttribute="trailing" secondItem="ULN-0k-AH2" secondAttribute="trailing" constant="161" id="46M-s5-9wi"/>
+                            <constraint firstItem="8s6-Tz-510" firstAttribute="bottom" secondItem="WTi-pv-Aan" secondAttribute="bottom" constant="311" id="GdO-7D-5sy"/>
+                            <constraint firstItem="ULN-0k-AH2" firstAttribute="leading" secondItem="8s6-Tz-510" secondAttribute="leading" constant="160" id="HBC-cj-3iC"/>
+                            <constraint firstItem="WTi-pv-Aan" firstAttribute="top" secondItem="8s6-Tz-510" secondAttribute="top" constant="290" id="PTB-Ug-GFs"/>
+                            <constraint firstItem="ULN-0k-AH2" firstAttribute="top" secondItem="WTi-pv-Aan" secondAttribute="bottom" constant="19" id="clB-80-v42"/>
+                            <constraint firstItem="8s6-Tz-510" firstAttribute="trailing" secondItem="WTi-pv-Aan" secondAttribute="trailing" constant="16" id="gle-5Z-Juh"/>
+                            <constraint firstItem="WTi-pv-Aan" firstAttribute="leading" secondItem="8s6-Tz-510" secondAttribute="leading" constant="16" id="pkd-yB-gJH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8s6-Tz-510"/>
+                    </view>
+                    <connections>
+                        <outlet property="VATLabel" destination="WTi-pv-Aan" id="DkX-cu-WPT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pi-4W-zCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
