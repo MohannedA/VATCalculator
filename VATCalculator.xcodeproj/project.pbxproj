@@ -12,7 +12,6 @@
 		04982AAD20F38986002A3E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04982AAB20F38986002A3E7C /* Main.storyboard */; };
 		04982AAF20F38987002A3E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04982AAE20F38987002A3E7C /* Assets.xcassets */; };
 		04982AB220F38987002A3E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04982AB020F38987002A3E7C /* LaunchScreen.storyboard */; };
-		04982ABA20F38A20002A3E7C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04982AB920F38A20002A3E7C /* Test.swift */; };
 		04982ABE20F49670002A3E7C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04982ABD20F49670002A3E7C /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 		04982AAE20F38987002A3E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04982AB120F38987002A3E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04982AB320F38987002A3E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04982AB920F38A20002A3E7C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		04982ABD20F49670002A3E7C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +63,6 @@
 				04982AAE20F38987002A3E7C /* Assets.xcassets */,
 				04982AB020F38987002A3E7C /* LaunchScreen.storyboard */,
 				04982AB320F38987002A3E7C /* Info.plist */,
-				04982AB920F38A20002A3E7C /* Test.swift */,
 			);
 			path = VATCalculator;
 			sourceTree = "<group>";
@@ -144,7 +141,6 @@
 				04982ABE20F49670002A3E7C /* SecondViewController.swift in Sources */,
 				04982AAA20F38986002A3E7C /* ViewController.swift in Sources */,
 				04982AA820F38986002A3E7C /* AppDelegate.swift in Sources */,
-				04982ABA20F38A20002A3E7C /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
